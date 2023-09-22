@@ -1,0 +1,16 @@
+{
+  "name": "push",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "sh scripts/deploy.sh"
+  },
+  "workspaces": [
+    "app",
+    "server"
+  ],
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
+}

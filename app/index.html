@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Push example</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-messaging.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Push notification example</h1>
+      <button id="enableNotifications">🔔 Enable Notification</button>
+      <div id="token"></div>
+      <div id="err"></div>
+      <form id="form" style="display: flex; flex-direction: column; gap: 1rem">
+        <label>
+          Registration token
+          <input name="registrationToken" />
+        </label>
+        <label>
+          Title
+          <input name="title" value="hello" />
+        </label>
+        <label>
+          Body
+          <input name="body" value="there" />
+        </label>
+        <button id="submit">Push me!</button>
+      </form>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
